@@ -1,9 +1,17 @@
 #include"bits/stdc++.h"
 using namespace std;
 
+
+// or simply we can use stl's binary search function.
+
+int binarySearch(int a[], int target) {
+	return binary_search(a, a + n, target);
+}	
+
 int main() {
 	int a[] = {2, 9 ,3, 1, 4 , 5, 6 ,8 ,7};
 	int n = sizeof(a) / sizeof(a[0]);
+	int target = 7;
 	sort(a, a + n);
 	int l = 0, r = n - 1;
 	
